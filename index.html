@@ -13,11 +13,27 @@
     <meta name="twitter:player" content="https://aliceandsarah.github.io/twitter-card/">
     <meta name="twitter:player:width" content="1280">
     <meta name="twitter:player:height" content="720">
+    <!-- Style to ensure video fills the entire viewport -->
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        iframe {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: none;
+        }
+    </style>
 </head>
 <body>
     <!-- Embed YouTube Video -->
-    <iframe width="1280" height="720"
-            src="https://www.youtube.com/embed/u8S74n0__FI?start=31"
+    <iframe src="https://www.youtube.com/embed/u8S74n0__FI?start=31&autoplay=1&controls=0"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
