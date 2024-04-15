@@ -7,17 +7,33 @@
     <!-- Twitter Player Card Meta Tags -->
     <meta name="twitter:card" content="player">
     <meta name="twitter:site" content="@Alice7563537724">
-    <meta name="twitter:title" content=" "> <!-- Minimal content for title -->
-    <meta name="twitter:description" content=" "> <!-- Minimal content for description -->
+    <meta name="twitter:title" content="My Special Video">
+    <meta name="twitter:description" content="Check out this amazing video!">
     <meta name="twitter:image" content="https://img.youtube.com/vi/u8S74n0__FI/maxresdefault.jpg">
-    <meta name="twitter:player" content="https://aliceandsarah.github.io/twitter-card/?update=3/">
+<meta name="twitter:player" content="https://aliceandsarah.github.io/twitter-card/?update=9">
     <meta name="twitter:player:width" content="1280">
     <meta name="twitter:player:height" content="720">
+    <!-- Style to ensure video fills the entire viewport -->
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        iframe {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: none;
+        }
+    </style>
 </head>
 <body>
     <!-- Embed YouTube Video -->
-    <iframe src="https://www.youtube.com/embed/u8S74n0__FI?start=31"
-            width="1280" height="720"
+    <iframe src="https://www.youtube.com/embed/u8S74n0__FI?start=31&autoplay=1&controls=0"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
